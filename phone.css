@@ -1,0 +1,178 @@
+@media (max-width:1242px) and (min-width:600px){
+    .main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+    }
+    .headcontainer{
+        width: 100%;
+    }
+    .firstnav{
+        width: 100%;
+    }
+    .saylanifirstul{
+        margin-right: 100px;
+    }
+    .imglogo{
+        margin-right: 110px;
+
+    }
+    .marqueecontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    #intro{
+        display: flex;
+        flex-direction: column;
+    }
+    #main{
+       width: 100%;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+    } 
+    .boxes{
+        display: flex;
+        flex-direction: column;
+    }
+    .mainbox-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .mainbox-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .missioncontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-2{
+        margin-bottom: 95px;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery-images{
+        margin: 3px 0px;
+    }
+    .footercontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .bg{
+        margin-right: 147px;
+    }
+    .sub-container{
+        margin-bottom: 32px;
+    }
+    .dg{
+        margin-right: 300px;
+    }
+    .cg{
+        margin-right: 360px;
+    }
+    .progressbar{
+        width: 200% !important;
+    }
+
+}
+
+@media (max-width:600px) and (min-width:300px){
+    
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .navbar{
+        margin-top: 60px;
+        margin-left: -300px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .imglogo{
+        display: block;
+        margin-bottom: 50px;
+
+    }
+    .intro-para{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .mainbox-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .mainbox-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-2{
+        margin-bottom: 95px;
+    }
+    .missionheading{
+        text-align: center;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-images{
+        margin: 4px 0px;
+    }
+    .footercontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-container{
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
+    .progressbar{
+        width: 50% !important;
+    }
+
+
+    
+}
