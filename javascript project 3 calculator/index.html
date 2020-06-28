@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="bootstrap/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-4.4.1-dist/js/bootstrap.min.js">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-5.13.0-web/js/all.js">
+</head>
+    <!-- <body> <div class="main border rounded border-dark mx-auto ">    
+        <div style="width: 110%;">
+        <input type="text" class="bg-dark text-light rounded-top " id="result" class="myresult">
+    </div>
+        <div class="border border-top-0 border-left-0 border-right-0 border-dark" >
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0"><i class="fas fa-plus"></i></button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0"><i class="fas fa-minus"></i></button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0"><i class="fa fa-times" aria-hidden="true"></i></button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-right-0 border-secondary rounded-0"><i class="fas fa-divide"></i></button>
+        </div>
+        <div class="border border-top-0 border-left-0 border-right-0 border-bottom-0 order-dark">
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0">7</button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0">8</button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0">      9</button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-right-0 border-secondary rounded-0">=</button>
+        </div>
+        <div>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0">4</button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0">5</button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0">6</button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-right-0 border-secondary rounded-0">=</button>
+        </div>
+        <div>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0">1</button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0">2</button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0">3</button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-right-0 border-secondary rounded-0">=</button>
+        </div>
+        <div>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0">0</button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0">.</button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-secondary rounded-0">C</button>
+            <button class="btn border-left-0 border-top-0 border-bottom-0 border-right-0 border-secondary rounded-0">=</button>
+        </div>
+    </div> -->
+    <div class="container">
+        <h1 class="text-center mt-5">Welcome to Smart Calculator</h1>
+    <table class="table table-bordered" style="border: 2px solid black;">
+        <thead>
+          <tr>
+              <input type="text" id="inp" class="w-100 rounded-top text-light bg-dark mar" style="border: 2px solid black;">
+            <!-- <th scope="col"><input type="text"></th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-success bg-warning" onclick="getNumber('+')"><i class="fas fa-plus"></i></td>
+            <td class="text-success bg-warning" onclick="getNumber('-')"><i class="fas fa-minus"></i></td>
+            <td class="text-success bg-warning" onclick="getNumber('*')"><i class="fas fa-times"></i></td>
+            <td class="text-success bg-warning" onclick="getNumber('/')"><i class="fas fa-divide"></i></td>
+          </tr>
+          <tr>
+            <td class="text-warning font-weight-bold bg-success" onclick="getNumber('6')">6</td>
+            <td class="text-warning font-weight-bold bg-success" onclick="getNumber('7')">7</td>
+            <td class="text-warning font-weight-bold bg-success" onclick="getNumber('8')">8</td>
+            <td class="text-warning font-weight-bold bg-success" onclick="getNumber('9')">9</td>
+          </tr>
+          <tr>
+            <td class="text-light font-weight-bold bg-primary" onclick="getNumber('2')">2</td>
+            <td class="text-light font-weight-bold bg-primary" onclick="getNumber('3')">3</td>
+            <td class="text-light font-weight-bold bg-primary" onclick="getNumber('4')">4</td>
+            <td class="text-light font-weight-bold bg-primary" onclick="getNumber('5')">5</td>
+          </tr>
+          <tr>
+            <td class="text-dark font-weight-bold bg-light" onclick="getNumber('0')">0</td>
+            <td class="text-dark font-weight-bold bg-light" onclick="getNumber('1')">1</td>
+            <td class="text-dark font-weight-bold bg-light" onclick="getNumber('.')"><b>.</b></td>
+            <td class="text-dark font-weight-bold bg-light" onclick="clearresult()">C</td>
+          </tr>
+          <tr>
+            <td colspan="4" style="text-align: center;" class="text-dark bg-info" onclick="getresult()"><i class="fas fa-equals"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

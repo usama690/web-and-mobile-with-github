@@ -1,0 +1,29 @@
+.main{
+    width: 187px;
+}
+
+.mar{
+    margin-top: 130px;
+}
+
+table{
+    border-collapse: separate !important;
+    border-spacing: 10px 0 !important;
+    text-align: center;
+    background-color: darkkhaki;
+}
+td{
+    padding: 10px 0;
+}
+td:hover{
+    background-color: red !important;
+}
+
+input:hover{
+    background-color:darkgrey !important;
+}
+
+h1{
+    color: darkorange;
+    font-family: 'Montserrat', sans-serif;
+}
