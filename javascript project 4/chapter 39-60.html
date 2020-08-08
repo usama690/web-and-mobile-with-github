@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        img {
+            margin: 10px;
+            height: 250px;
+            width: 350px;
+
+        }
+
+        a {
+            font-size: 32px;
+            text-decoration: none;
+        }
+
+        #more {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="" onclick="box()">click me</a>
+    <div class="contianer mb-5">
+        <img src="/images/img-1.jpg" onclick="img()" id="prod" alt="">
+        <img src="/images/img-2.jpg" onclick="img()" id="prod" alt="">
+        <img src="/images/img-3.jpg" onclick="img()" id="prod" alt="">
+        <img src="/images/img-4.jpg" onclick="img()" id="prod" alt="">
+    </div>
+    <table class="table table-striped" id="mytable">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Class</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>10</td>
+                <td><button class="btn btn-primary" onclick="myDelete(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>9</td>
+                <td><button class="btn btn-primary" onclick="myDelete(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>10</td>
+                <td><button class="btn btn-primary" onclick="myDelete(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>bolten</td>
+                <td>8</td>
+                <td><button class="btn btn-primary" onclick="myDelete(this)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="images">
+        <img src="/images/car-2.png" alt="" onmouseover="src='/images/car-1.jpg'" onmouseout="src='/images/car-2.png'">
+    </div>
+
+    <div>
+        <button onclick="ClickMe()" id="increase">increase</button>
+        <button onclick="DecMe()" id="decrease">decrease</button>
+    </div>
+    <br>
+    <center>
+        <form action="" name="myform" id="myform" onsubmit="getData()">
+            <label for="username">Username or Email</label>
+            <input type="text" name="username" id="username" style="text-align: center;">
+            <br>
+            <!-- <label for="paswd" style="padding:0px 30px">Password</label>
+      <input type="password" name="paswd" id="paswd" style="text-align: center;">
+      <br> -->
+            <input type="submit" value="Submit" onclick="getData()">
+        </form>
+    </center>
+    <br>
+    <center>
+        <textarea id="items" cols="15" rows="2">
+</textarea>
+    </center>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, similique! <span id="dots">...</span>
+<span id="more" class="d-none">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore laboriosam sint consequatur quibusdam vel magni explicabo odit molestiae omnis quas.</span></p>
+<button class="btn btn-success" id="myBtn" onclick="myFunction()">
+    ReadMore
+</button> -->
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+        lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas
+            nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc
+            sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed
+            ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum.
+            Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+    <br>
+    <!-- modify the table  -->
+    <p class="h4 text-center">Welcome to latest student Data</p>
+    <br>
+    <form class="text-center" id="latestform" action="">
+
+        <label for="stdnumber">Serial Number</label>
+        <input type="number" name="stdnumber" id="stdnumber">
+        <label for="name">Student Name</label>
+        <input type="name" name="name" id="name">
+        <label for="class">Class</label>
+        <input type="number" name="class" id="class">
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <br>
+
+    -------------------------------------------------------<!-- The   DOM  -->--------------------------------------
+
+
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+</html>
