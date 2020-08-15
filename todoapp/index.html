@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <p class="h1 mt-5 text-center text-success">Welcome To Our TODO List !</p>
+    <div class="container mt-5">
+    <input type="text" placeholder="Enter TODO" name="" class="rounded" id="todo-item">
+    <button class="btn btn-success btn-sm ml-5" onclick="addToList()">ADD TO LIST</button>
+    <button class="btn btn-danger btn-sm " onclick="deleteAll()" >DELETE ALL </button>
+
+    <ul id="list" class="h4">
+        
+    </ul>
+</div>
+    
+    
+    
+    <script src="/bootstrap/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
